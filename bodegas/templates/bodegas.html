@@ -1,0 +1,28 @@
+{% extends "agregar.html" %}
+{% load static %}
+
+{% block content %}
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>descripcion</th>
+            <th>cantidad</th>
+            <th>Opciones</th>
+        </tr>
+
+        {% for p in bodega %}
+
+        <tr>
+            <td>{{ p.nombre }}</td>
+            <td>{{ p.descripcion }}</td>
+            <td>{{ p.cantidad }}</td>
+            <td><a class="nav-link" href="{% url 'modificarmaterial' p.id %}">Modificar</a></td>
+            <td><a class="nav-link" href="{% url 'eliminarma' p.id %}">Eliminar</a></td>
+
+
+        </tr>
+
+         {% endfor %}
+    </table>
+
+  {% endblock %}

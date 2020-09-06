@@ -1,14 +1,12 @@
 {% extends "base.html" %}
-
- {% block title %} Bodega {% endblock title %}
+{% load static %}
+{% block title %} Bodega {% endblock title %}
 
 {% block background %}{% load static %}{% static 'img/bodegita.jpg' %}{% endblock %}
 
-
-{% block headers %}  <h1> BODEGA </h1>
-    <span class="subheading">Ases. Tuliioo Bohorquez</span> {% endblock %}
-
-
-{% block content %} 
-    <h2> Verificacion De Material </h2>
-{% endblock %} 
+{% block headers %}  <h1> Bodega </h1>
+    <span class="subheading"> Tulio Bohorquez </span> {% endblock %}
+{% block content %}
+    <a class="nav-link" href="{% url 'agregarma' %}">Agregar Repuesto</a>
+    <a class="nav-link" href="{% url 'Tabla' %}">Lista de Repuesto</a>
+{% endblock %}

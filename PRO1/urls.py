@@ -24,8 +24,10 @@ urlpatterns = [
     path('contact/', views.contact, name="contact"),
     path('bodega/', views.bodega, name="bodega"),
     path('usuario/', views.usuario, name="usuario"),
+    path('citarapida/', views.citarapida, name="citarapida"),
     path('factura/', views.factura, name="factura"),
     path('Mecanico/', views.mecanico, name="Mecanico"),
     path('cliente/', include('cliente.urls'),name="cliente"),
-    path('admin/', admin.site.urls),
+    path('bodegas/', include('bodegas.urls'),name="bodegas"),
+    path('admin/', admin.site.urls)
 ]
