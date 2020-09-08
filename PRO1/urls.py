@@ -20,8 +20,6 @@ from core import views
 
 urlpatterns = [
     path('', views.home, name="home"),
-    path('about-me/', views.about, name="about"),
-    path('contact/', views.contact, name="contact"),
     path('bodega/', views.bodega, name="bodega"),
     path('usuario/', views.usuario, name="usuario"),
     path('citarapida/', views.citarapida, name="citarapida"),
