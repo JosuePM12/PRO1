@@ -21,7 +21,7 @@ def usuario(request, plantilla="usuario.html"):
 def factura(request, plantilla="factura.html"):
     return render(request, plantilla)
 
-def mecanico(request, plantilla="mecanico.html"):
+def mecanico(request, plantilla="Mecanico.html"):
     return render(request, plantilla)
 
 def citarapida(request, plantilla="citarapida.html"):

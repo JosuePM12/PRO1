@@ -27,5 +27,6 @@ urlpatterns = [
     path('Mecanico/', views.mecanico, name="Mecanico"),
     path('cliente/', include('cliente.urls'),name="cliente"),
     path('bodegas/', include('bodegas.urls'),name="bodegas"),
+    path('mecanicos/', include('Mecanico.urls'), name="mecanicos"),
     path('admin/', admin.site.urls)
 ]
